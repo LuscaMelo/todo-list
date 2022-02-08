@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #370665; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 450px;
+    margin: 50px auto;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-shadow: 5px 7px 15px rgba(15, 15, 15, 0.637);
+}
+
+.tittle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:rgb(17, 17, 17)
+}
+
+.tittle i {
+    font-size: 2rem;
+}
+
+.addTask {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.add-task-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid #CCC;
+    border-radius: 5px 0 0 5px;
+    color: rgb(160, 160, 160)
+}
+
+.add-task-input::placeholder {
+    font-size: 0.9rem;
+    color:rgb(160, 160, 160);
+}
+
+.add-task-btn {
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background: #520f88;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-task-btn:hover {
+    background: #3e0c66;
+    transition: 0.5s;
+}
+
+.task-list {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.task-list ol {
+    background: rgb(240, 240, 240);
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.task-list h3 {
+    margin: 10px 0;
+    color:rgb(17, 17, 17)
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #363636;
+    background: rgb(226, 226, 226);
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.notCompleted button {
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background: rgb(253, 38, 38);
+    cursor: pointer;
+    color: #FFF;
+    text-shadow: rgba(0, 0, 0, 0.336) 2px 2px;
+}
+
+.notCompleted button:first-child{
+    margin-left: auto;
+    margin-right: 5px;
+    background: rgb(54, 99, 53);
+}
+
+.Completed button{
+    margin-left: auto;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background: rgb(253, 38, 38);
+    cursor: pointer;
+    color: #FFF;
+    text-shadow: rgba(0, 0, 0, 0.336) 2px 2px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(17, 17, 17);
+    width: 100%;
+    margin: 50px 0 0;
+}
+
+.footer button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(58, 13, 110);
+    color: #FFF;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 490px ){
+    .container {
+        width: 93%;
+    }
+    
+}
